@@ -1,0 +1,15 @@
+.wrapper {
+    margin: 10px 50px;
+}
+
+.header {
+    height: 200px;
+    background-color: #34cfeb;
+}
+
+.title {
+    text-align: center;
+    padding-top: 24px;
+    font-size: xx-large;
+    color: #023c6b;
+}
