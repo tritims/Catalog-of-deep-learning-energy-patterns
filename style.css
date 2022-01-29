@@ -17,6 +17,11 @@
 .card-body {
     cursor: pointer;
 }
+
+.pattern-link {
+    text-decoration-line: none;
+    color: inherit;
+}
 .card-body:hover{
     color: #023c6b;
 }
