@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Read-write memory footprint</title>
+    <title>Efficient read-write</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.min.css">
@@ -17,6 +17,52 @@
             Towards a catalog of energy patterns for deep learning development
         </div>
     </div>
-    <a href="./index.html">Go Back</a>
+    <div class="content">
+        <a href="./index.html">Go Back</a>
+        <h1>Efficient read-write</h1>
+        <p class="tagline">Minimize the memory footprint while 
+            performing read/write operations.</p>
+        <div class="card">
+            <div class="card-header">
+                Description 
+            </div>
+            <div class="card-body">
+                <!-- <h5 class="card-title">Apply transfer learning with pre-trained networks whenever feasible</h5> -->
+                <p class="card-text">
+                    <strong>Context:</strong>  Working with deep learning models require reading and
+                    writing enormous amounts of data during data cleaning, data preparation, 
+                    and inferencing stages of the deep learning workflow.
+                </p>
+                <p class="card-text">
+                    <strong>Problem:</strong>  Read and write operations have an influence on the 
+                    energy consumption of a processor. Due to the size of data
+                    involved in deep learning, not performing them efficiently may
+                    lead to increased machine cycles, unnecessary data movements and
+                    increased memory footprint leading to increased energy consumption.
+                </p>
+                <p class="card-text">
+                    <strong>Solution:</strong> While reading and writing the data, take care to minimize
+                    the number of operations using efficient implementation methods.
+                    Avoid non essential referencing of data to reduce the memory footprint.
+                </p>
+                <p class="card-text">
+                    <strong>Example:</strong>   Suppose a user wants to load a large number of images
+                    in batches to train a model in tensorflow. Loading these images in
+                    the RAM before the training requires a lot of memory to hold the
+                    images increasing the memory footprint. Instead, the user could
+                    use map function from tf.data.Dataset to have only the path to the
+                    images and load the batch of images only during the train step.
+                    Loading the data this way minimizes the memory usage required to hold all the data in the RAM.
+                    The example is based on <a href="https://stackoverflow.com/questions/61368378/">this</a> stack overflow post. 
+                </p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="card">
+            <div class="card-header">
+                Related Stack Overflow Posts 
+            </div>
+        </div>
+    </div>
 </body>
 </html>

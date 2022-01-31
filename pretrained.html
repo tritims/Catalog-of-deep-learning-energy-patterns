@@ -1,22 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pretrained models</title>
+    <title>Pre-trained models</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.min.css">
 
     <script src="bootstrap.min.js"></script>
 </head>
+
 <body>
     <div class="header">
         <div class="title">
             Towards a catalog of energy patterns for deep learning development
         </div>
     </div>
-    <a href="./index.html">Go Back</a>
+    <div class="content">
+        <a href="./index.html">Go Back</a>
+        <h1>Pre-trained Networks</h1>
+        <p class="tagline">Apply transfer learning with pre-trained networks whenever feasible</p>
+        <div class="card">
+            <div class="card-header">
+                Description 
+            </div>
+            <div class="card-body">
+                <!-- <h5 class="card-title">Apply transfer learning with pre-trained networks whenever feasible</h5> -->
+                <p class="card-text">
+                    <strong>Context:</strong> Training the deep learning models typically requires labelled data points. 
+                    At times, the training data can be huge and networks with large number of parameters may be required 
+                    to achieve the desired performance.
+                </p>
+                <p class="card-text">
+                    <strong>Problem:</strong> The training process typically involves multiple rounds of training by 
+                    trying out different permutations of hyperparameters to arrive at the best model. 
+                    In the case of large networks with huge amount of training data, 
+                    the process can take a very long time due to the number of computations involved. 
+                    This can make the training process expensive in terms of energy consumed.
+                </p>
+                <p class="card-text">
+                    <strong>Solution:</strong> The energy requirements of training the network could be cut down using 
+                    transfer learning if pre-trained models exist for the given task. 
+                    Transfer learning is the approach where a machine learning model trained on one task is reused on a different task. 
+                    Transfer learning can be used when the data available for training is limited or collecting them is too expensive. 
+                    Sometimes, transfer learning may involve fine tuning the pre-trained model with a smaller dataset. 
+                    Due to the absence of or reduction in the training involved, the corresponding computational energy spent on 
+                    the process can be saved.
+                </p>
+                <p class="cardtext">
+                    <strong>Example:</strong>  Consider a scenario where the user is required to build
+                    a model that gives a vector representation of words from a natural
+                    language text. It would require training the neural network using
+                    the data from a large corpus of text over several iterations to arrive
+                    at an adequate vector representation. Instead, the user can use a
+                    pre-trained model like <a href="https://www.sbert.net/">Sentence-BERT</a>  and save the energy
+                    required to train a model from scratch.
+                </p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="card">
+            <div class="card-header">
+                Related Stack Overflow Posts 
+            </div>
+        </div>
+    </div>  
 </body>
+
 </html>

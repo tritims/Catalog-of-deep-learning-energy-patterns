@@ -20,7 +20,7 @@
     <div class="wrapper">
         <div class="card">
             <a class="pattern-link" href="./pretrained.html">
-            <div class="card-body">
+            <div class="card-body pattern-container">
                 <h5 class="card-title">Pre-trained networks</h5>
                 <p class="card-text">Apply transfer learning with pre-trained networks whenever feasible.</p>
             </div>
@@ -28,14 +28,29 @@
         </div>
         <div class="card">
             <a class="pattern-link" href="./checkpoint.html">
-            <div class="card-body">
+            <div class="card-body pattern-container">
                 <h5 class="card-title">Checkpointing</h5>
                 <p class="card-text">Use regular checkpointing for large training time.</p>
             </div>
         </div>
         <div class="card">
+            <a class="pattern-link" href="./pruning.html">
+            <div class="card-body pattern-container">
+                <h5 class="card-title">Pruning</h5>
+                <p class="card-text">Prune large networks to reduce the impact of over-parameterization.</p>
+            </div>
+        </div>
+        <div class="card">
+            <a class="pattern-link" href="./quantization.html">
+            <div class="card-body pattern-container">
+                <h5 class="card-title">Quantization</h5>
+                <p class="card-text">Use network quantization in applications with
+                     memory constraints where a minor loss in performance is acceptable</p>
+            </div>
+        </div>
+        <div class="card">
             <a class="pattern-link" href="./distillation.html">
-            <div class="card-body">
+            <div class="card-body pattern-container">
                 <h5 class="card-title">Distillation</h5>
                 <p class="card-text">If pre-trained models are too large for a given
                     task, apply knowledge distillation or use distilled
@@ -44,15 +59,15 @@
         </div>
         <div class="card">
             <a class="pattern-link" href="./read-write.html">
-            <div class="card-body">
-                <h5 class="card-title">Read-write memory footprint</h5>
+            <div class="card-body pattern-container">
+                <h5 class="card-title">Efficient read-write</h5>
                 <p class="card-text">Minimize the memory footprint while 
                     performing read/write operations.</p>
             </div>
         </div>
         <div class="card">
             <a class="pattern-link" href="./leaks.html">
-            <div class="card-body">
+            <div class="card-body pattern-container">
                 <h5 class="card-title">Memory Leaks</h5>
                 <p class="card-text">Take care of memory leaks and OOM errors
                     before starting the training process.</p>
@@ -60,18 +75,11 @@
         </div>
         <div class="card">
             <a class="pattern-link" href="./tensor-operations.html">
-            <div class="card-body">
+            <div class="card-body pattern-container">
                 <h5 class="card-title">Tensor Operations</h5>
                 <p class="card-text">Look for built in library functions for tensor
                     operations before writing custom
                     implementations.</p>
-            </div>
-        </div>
-        <div class="card">
-            <a class="pattern-link" href="./normalization.html">
-            <div class="card-body">
-                <h5 class="card-title">Normalization</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
             </div>
         </div>
     </div>

@@ -17,6 +17,53 @@
             Towards a catalog of energy patterns for deep learning development
         </div>
     </div>
-    <a href="./index.html">Go Back</a>
+    <div class="content">
+        <a href="./index.html">Go Back</a>
+        <h1>Distillation</h1>
+        <p class="tagline">If pre-trained models are too large for a given task, apply knowledge 
+            distillation or use distilled versions of pre-trained models</p>
+        <div class="card">
+            <div class="card-header">
+                Description 
+            </div>
+            <div class="card-body">
+                <!-- <h5 class="card-title">Apply transfer learning with pre-trained networks whenever feasible</h5> -->
+                <p class="card-text">
+                    <strong>Context:</strong>  Use of pretrained models can save the energy spent on
+                    training a new network from scratch. However, these models can sometimes be too 
+                    large for the given task and given power consumption and resource constraints.
+                </p>
+                <p class="card-text">
+                    <strong>Problem:</strong> Using pretrained models that are too large for a given
+                    task may cause excessive computations and memory access due to
+                    the number and size of model parameters. This leads to increased
+                    power consumption during fine tuning and inferencing.
+                </p>
+                <p class="card-text">
+                    <strong>Solution:</strong>  Knowledge distillation refers to the process of transferring 
+                    the knowledge from a larger model to a smaller one. 
+                    It involves training a smaller model called student to mimic a larger
+                    pre-trained model called teacher using an appropriate loss function.
+                    It solves the problem of expensive inferencing caused by larger
+                    pre-trained models.
+                </p>
+                <p class="card-text">
+                    <strong>Example:</strong>  Consider a classification task that needs to classify movie
+                    reviews. A pretrained model like BERT with some fine-tuning can
+                    be used without having to train the model from scratch. However,
+                    if a minor compromise in the accuracy can be tolerated, a distilled
+                    version of BERT model called DistilBERT can be used with some
+                    fine-tuning. Due to its smaller size, DistilBERT can be much
+                    more energy-efficient for fine-tuning and inferencing.
+                </p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="card">
+            <div class="card-header">
+                Related Stack Overflow Posts 
+            </div>
+        </div>
+    </div>
 </body>
 </html>
