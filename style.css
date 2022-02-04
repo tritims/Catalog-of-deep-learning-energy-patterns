@@ -1,5 +1,5 @@
 .wrapper {
-    margin: 10px 50px;
+    margin: 10px auto;
 }
 
 .header {
@@ -31,7 +31,8 @@
 }
 
 .content {
-    padding: 50px;
+    padding: 50px 0px;
+    margin: auto;
 }
 
 .divider {
@@ -44,6 +45,7 @@
 }
 
 .pattern-img {
-    width: 200px;
-    height: 200px;
+    max-height: 300px;
+    max-width: 300px;
+    float: right;
 }
