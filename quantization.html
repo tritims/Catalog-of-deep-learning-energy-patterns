@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
 
     <script src="bootstrap.min.js"></script>
 </head>
+
 <body>
     <div class="header">
         <div class="title">
@@ -20,18 +22,20 @@
     <div class="content col-11 col-md-10 col-lg-9">
         <a href="./index.html">Go Back</a>
         <h1>Quantization</h1>
-        <p class="tagline">Use network quantization in applications with memory constraints 
+        <p class="tagline">Use network quantization in applications with memory constraints
             where a minor loss in performance is acceptable</p>
         <div class="card">
             <div class="card-header">
-                Description 
+                Description
             </div>
             <div class="card-body">
+                <img class="pattern-img" src="./quantization.png" alt="quantization image">
                 <!-- <h5 class="card-title">Apply transfer learning with pre-trained networks whenever feasible</h5> -->
                 <p class="card-text">
                     <strong>Context:</strong> With the rising use of deep learning in different domains,
                     the models are being used on battery powered devices such as
-                    smartphones. Doing so is also beneficial from the point of view of bandwidth and latency. However, the large size
+                    smartphones. Doing so is also beneficial from the point of view of bandwidth and latency. However,
+                    the large size
                     of these models with their energy consumption requirements can
                     pose a significant challenge in case of battery powered devices
                 </p>
@@ -43,15 +47,19 @@
                 </p>
                 <p class="card-text">
                     <strong>Solution:</strong> Network quantization involves reducing the number of
-                    bits to represent the parameters of the neural network. Quantization has been used in the existing work to improve energy efficiency
-                    of the deep learning models. Quantizing the network can make the multiplication 
-                    and addition operations less expensive computationally due to the reduction in the 
-                    bit-width of the operands. This causes reduction in power consumption. It also cuts down the memory requirements due to the reduction in the model size. If
-                    done properly, quantization only causes minor loss in performance and does not affect the output significantly. 
+                    bits to represent the parameters of the neural network. Quantization has been used in the existing
+                    work to improve energy efficiency
+                    of the deep learning models. Quantizing the network can make the multiplication
+                    and addition operations less expensive computationally due to the reduction in the
+                    bit-width of the operands. This causes reduction in power consumption. It also cuts down the memory
+                    requirements due to the reduction in the model size. If
+                    done properly, quantization only causes minor loss in performance and does not affect the output
+                    significantly.
                 </p>
                 <p class="card-text">
-                    <strong>Example:</strong> Consider an MobileNet V2 model that needs to be deployed on 
-                    a smartphone. Quantization of the model to use parameters using 4-bit precision can lead to a smaller model size with
+                    <strong>Example:</strong> Consider an MobileNet V2 model that needs to be deployed on
+                    a smartphone. Quantization of the model to use parameters using 4-bit precision can lead to a
+                    smaller model size with
                     lesser energy consumption per computation.
                 </p>
             </div>
@@ -59,40 +67,99 @@
         <div class="divider"></div>
         <div class="card">
             <div class="card-header">
-                Related Stack Overflow Posts 
+                Related Stack Overflow Posts
             </div>
             <div class="card-body">
                 <ul>
-                    <li><a href='https://stackoverflow.com/questions/54261772/'>https://stackoverflow.com/questions/54261772/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/44311820/'>https://stackoverflow.com/questions/44311820/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/61637457/'>https://stackoverflow.com/questions/61637457/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/53104887/'>https://stackoverflow.com/questions/53104887/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/62490121/'>https://stackoverflow.com/questions/62490121/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/62592265/'>https://stackoverflow.com/questions/62592265/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/63207707/'>https://stackoverflow.com/questions/63207707/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/61083603/'>https://stackoverflow.com/questions/61083603/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/53017722/'>https://stackoverflow.com/questions/53017722/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/56779949/'>https://stackoverflow.com/questions/56779949/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/62450062/'>https://stackoverflow.com/questions/62450062/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/46618583/'>https://stackoverflow.com/questions/46618583/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/65902185/'>https://stackoverflow.com/questions/65902185/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/57234308/'>https://stackoverflow.com/questions/57234308/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/53500185/'>https://stackoverflow.com/questions/53500185/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/63924862/'>https://stackoverflow.com/questions/63924862/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/60998416/'>https://stackoverflow.com/questions/60998416/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/43834533/'>https://stackoverflow.com/questions/43834533/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/64413087/'>https://stackoverflow.com/questions/64413087/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/52259343/'>https://stackoverflow.com/questions/52259343/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/62558666/'>https://stackoverflow.com/questions/62558666/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/57631313/'>https://stackoverflow.com/questions/57631313/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/66731194/'>https://stackoverflow.com/questions/66731194/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/43300000/'>https://stackoverflow.com/questions/43300000/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/66879986/'>https://stackoverflow.com/questions/66879986/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/65626935/'>https://stackoverflow.com/questions/65626935/</a><br></li>
-                    
+                    <li><a
+                            href='https://stackoverflow.com/questions/54261772/'>https://stackoverflow.com/questions/54261772/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/44311820/'>https://stackoverflow.com/questions/44311820/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/61637457/'>https://stackoverflow.com/questions/61637457/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/53104887/'>https://stackoverflow.com/questions/53104887/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/62490121/'>https://stackoverflow.com/questions/62490121/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/62592265/'>https://stackoverflow.com/questions/62592265/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/63207707/'>https://stackoverflow.com/questions/63207707/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/61083603/'>https://stackoverflow.com/questions/61083603/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/53017722/'>https://stackoverflow.com/questions/53017722/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/56779949/'>https://stackoverflow.com/questions/56779949/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/62450062/'>https://stackoverflow.com/questions/62450062/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/46618583/'>https://stackoverflow.com/questions/46618583/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/65902185/'>https://stackoverflow.com/questions/65902185/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/57234308/'>https://stackoverflow.com/questions/57234308/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/53500185/'>https://stackoverflow.com/questions/53500185/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/63924862/'>https://stackoverflow.com/questions/63924862/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/60998416/'>https://stackoverflow.com/questions/60998416/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/43834533/'>https://stackoverflow.com/questions/43834533/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/64413087/'>https://stackoverflow.com/questions/64413087/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/52259343/'>https://stackoverflow.com/questions/52259343/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/62558666/'>https://stackoverflow.com/questions/62558666/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/57631313/'>https://stackoverflow.com/questions/57631313/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/66731194/'>https://stackoverflow.com/questions/66731194/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/43300000/'>https://stackoverflow.com/questions/43300000/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/66879986/'>https://stackoverflow.com/questions/66879986/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/65626935/'>https://stackoverflow.com/questions/65626935/</a><br>
+                    </li>
+
                 </ul>
             </div>
         </div>
-    </div>
+        <div class="divider"></div>
+        <div class="card">
+            <div class="card-header">Acknowledgements</div>
+            <div class="card-body">Image Source: <a
+                    href="https://developer.nvidia.com/blog/achieving-fp32-accuracy-for-int8-inference-using-quantization-aware-training-with-tensorrt/">
+                    Nvidia Developer Blog</a></div>
+        </div>
 </body>
+
 </html>
