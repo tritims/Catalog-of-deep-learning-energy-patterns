@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
 
     <script src="bootstrap.min.js"></script>
 </head>
+
 <body>
     <div class="header">
         <div class="title">
@@ -23,118 +25,238 @@
         <p class="tagline">Take care of memory leaks and OOM errors before starting the training process</p>
         <div class="card">
             <div class="card-header">
-                Description 
+                Description
             </div>
             <div class="card-body">
                 <!-- <h5 class="card-title">Apply transfer learning with pre-trained networks whenever feasible</h5> -->
                 <p class="card-text">
-                    <strong>Context:</strong>  Memory management related exceptions constitute a
+                    <strong>Context:</strong> Memory management related exceptions constitute a
                     major portion of fault triggers in deep learning. Memory leaks
                     and OOM (out of memory) errors may during the training, loading
                     of data, writing/saving of data and also during the inferencing
                 </p>
                 <p class="card-text">
-                    <strong>Problem:</strong>  When a program terminates due to OOM errors during
+                    <strong>Problem:</strong> When a program terminates due to OOM errors during
                     the process of training the network, in absence of a checkpoint, the
                     knowledge gained during the training process is lost. Due to this,
                     the computational energy spent on the training is wasted.
                 </p>
                 <p class="card-text">
-                    <strong>Solution:</strong> 
-                    Factor in the memory availability constraints and possible 
+                    <strong>Solution:</strong>
+                    Factor in the memory availability constraints and possible
                     OOM exceptions while designing the program to train the
                     network and take appropriate steps to avoid them. This may reduce
                     the chances of OOM errors and prevent the corresponding waste
                     of energy.
                 </p>
                 <p class="card-text">
-                    <strong>Example:</strong> An example of this pattern can be seen in 
-                    <a href="https://stackoverflow.com/questions/42886049/">this</a> stack overflow post .The user runs into out of memory
+                    <strong>Example:</strong> An example of this pattern can be seen in
+                    <a href="https://stackoverflow.com/questions/42886049/">this</a> stack overflow post .The user runs
+                    into out of memory
                     error while training a Keras sequential model due to the inefficient
                     management of the memory in a program that uses a for loop caus-
                     ing a waste of energy spent on the training. This could be avoided
                     by defining the network outside the for loop and reusing the same
-                    instance every iteration as suggested in the <a href="https://stackoverflow.com/a/42933345">answer</a>.  
+                    instance every iteration as suggested in the <a
+                        href="https://stackoverflow.com/a/42933345">answer</a>.
                 </p>
             </div>
         </div>
         <div class="divider"></div>
         <div class="card">
             <div class="card-header">
-                Related Stack Overflow Posts 
+                Related Stack Overflow Posts
             </div>
             <dv class="card-body">
                 <ul>
-                    <li><a href='https://stackoverflow.com/questions/63178757/'>https://stackoverflow.com/questions/63178757/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/43505001/'>https://stackoverflow.com/questions/43505001/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/43695085/'>https://stackoverflow.com/questions/43695085/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/61421983/'>https://stackoverflow.com/questions/61421983/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/47115946/'>https://stackoverflow.com/questions/47115946/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/41255031/'>https://stackoverflow.com/questions/41255031/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/62402825/'>https://stackoverflow.com/questions/62402825/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/52700621/'>https://stackoverflow.com/questions/52700621/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/49942110/'>https://stackoverflow.com/questions/49942110/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/47482135/'>https://stackoverflow.com/questions/47482135/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/50657425/'>https://stackoverflow.com/questions/50657425/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/50690891/'>https://stackoverflow.com/questions/50690891/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/47743936/'>https://stackoverflow.com/questions/47743936/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/54477157/'>https://stackoverflow.com/questions/54477157/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/66880262/'>https://stackoverflow.com/questions/66880262/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/56939076/'>https://stackoverflow.com/questions/56939076/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/51175837/'>https://stackoverflow.com/questions/51175837/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/52443056/'>https://stackoverflow.com/questions/52443056/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/61715631/'>https://stackoverflow.com/questions/61715631/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/46241806/'>https://stackoverflow.com/questions/46241806/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/35695183/'>https://stackoverflow.com/questions/35695183/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/44082297/'>https://stackoverflow.com/questions/44082297/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/46539404/'>https://stackoverflow.com/questions/46539404/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/50331201/'>https://stackoverflow.com/questions/50331201/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/48212123/'>https://stackoverflow.com/questions/48212123/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/48257322/'>https://stackoverflow.com/questions/48257322/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/61470732/'>https://stackoverflow.com/questions/61470732/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/44327803/'>https://stackoverflow.com/questions/44327803/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/49081129/'>https://stackoverflow.com/questions/49081129/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/47286441/'>https://stackoverflow.com/questions/47286441/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/44035651/'>https://stackoverflow.com/questions/44035651/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/39878628/'>https://stackoverflow.com/questions/39878628/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/48048297/'>https://stackoverflow.com/questions/48048297/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/62115443/'>https://stackoverflow.com/questions/62115443/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/62931082/'>https://stackoverflow.com/questions/62931082/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/66581492/'>https://stackoverflow.com/questions/66581492/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/66022730/'>https://stackoverflow.com/questions/66022730/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/63192550/'>https://stackoverflow.com/questions/63192550/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/67056438/'>https://stackoverflow.com/questions/67056438/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/63588069/'>https://stackoverflow.com/questions/63588069/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/59265818/'>https://stackoverflow.com/questions/59265818/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/65107933/'>https://stackoverflow.com/questions/65107933/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/34395942/'>https://stackoverflow.com/questions/34395942/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/63178757/'>https://stackoverflow.com/questions/63178757/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/62402825/'>https://stackoverflow.com/questions/62402825/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/54477157/'>https://stackoverflow.com/questions/54477157/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/56939076/'>https://stackoverflow.com/questions/56939076/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/61715631/'>https://stackoverflow.com/questions/61715631/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/45252051/'>https://stackoverflow.com/questions/45252051/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/50333532/'>https://stackoverflow.com/questions/50333532/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/50331201/'>https://stackoverflow.com/questions/50331201/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/48257322/'>https://stackoverflow.com/questions/48257322/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/44327803/'>https://stackoverflow.com/questions/44327803/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/46230501/'>https://stackoverflow.com/questions/46230501/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/49081129/'>https://stackoverflow.com/questions/49081129/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/47286441/'>https://stackoverflow.com/questions/47286441/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/54275734/'>https://stackoverflow.com/questions/54275734/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/58636603/'>https://stackoverflow.com/questions/58636603/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/64519523/'>https://stackoverflow.com/questions/64519523/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/58898253/'>https://stackoverflow.com/questions/58898253/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/54449159/'>https://stackoverflow.com/questions/54449159/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/50895128/'>https://stackoverflow.com/questions/50895128/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/64139658/'>https://stackoverflow.com/questions/64139658/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/56910950/'>https://stackoverflow.com/questions/56910950/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/42886049/'>https://stackoverflow.com/questions/42886049/</a><br></li>
-                    <li><a href='https://stackoverflow.com/questions/59855790/'>https://stackoverflow.com/questions/59855790/</a><br></li>
-                                        
+                    <li><a
+                            href='https://stackoverflow.com/questions/63178757/'>https://stackoverflow.com/questions/63178757/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/43695085/'>https://stackoverflow.com/questions/43695085/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/61421983/'>https://stackoverflow.com/questions/61421983/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/47115946/'>https://stackoverflow.com/questions/47115946/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/41255031/'>https://stackoverflow.com/questions/41255031/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/62402825/'>https://stackoverflow.com/questions/62402825/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/60783153/'>https://stackoverflow.com/questions/60783153/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/52700621/'>https://stackoverflow.com/questions/52700621/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/49942110/'>https://stackoverflow.com/questions/49942110/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/47482135/'>https://stackoverflow.com/questions/47482135/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/50690891/'>https://stackoverflow.com/questions/50690891/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/47743936/'>https://stackoverflow.com/questions/47743936/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/54477157/'>https://stackoverflow.com/questions/54477157/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/43299286/'>https://stackoverflow.com/questions/43299286/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/66880262/'>https://stackoverflow.com/questions/66880262/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/51175837/'>https://stackoverflow.com/questions/51175837/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/52443056/'>https://stackoverflow.com/questions/52443056/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/61715631/'>https://stackoverflow.com/questions/61715631/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/46241806/'>https://stackoverflow.com/questions/46241806/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/35695183/'>https://stackoverflow.com/questions/35695183/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/44082297/'>https://stackoverflow.com/questions/44082297/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/46539404/'>https://stackoverflow.com/questions/46539404/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/50331201/'>https://stackoverflow.com/questions/50331201/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/49735217/'>https://stackoverflow.com/questions/49735217/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/48212123/'>https://stackoverflow.com/questions/48212123/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/44327803/'>https://stackoverflow.com/questions/44327803/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/47393991/'>https://stackoverflow.com/questions/47393991/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/49081129/'>https://stackoverflow.com/questions/49081129/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/47286441/'>https://stackoverflow.com/questions/47286441/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/44035651/'>https://stackoverflow.com/questions/44035651/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/39878628/'>https://stackoverflow.com/questions/39878628/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/62115443/'>https://stackoverflow.com/questions/62115443/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/62931082/'>https://stackoverflow.com/questions/62931082/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/63192550/'>https://stackoverflow.com/questions/63192550/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/67056438/'>https://stackoverflow.com/questions/67056438/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/63588069/'>https://stackoverflow.com/questions/63588069/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/59265818/'>https://stackoverflow.com/questions/59265818/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/65107933/'>https://stackoverflow.com/questions/65107933/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/62402825/'>https://stackoverflow.com/questions/62402825/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/54477157/'>https://stackoverflow.com/questions/54477157/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/61715631/'>https://stackoverflow.com/questions/61715631/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/50333532/'>https://stackoverflow.com/questions/50333532/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/50331201/'>https://stackoverflow.com/questions/50331201/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/44327803/'>https://stackoverflow.com/questions/44327803/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/49081129/'>https://stackoverflow.com/questions/49081129/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/47286441/'>https://stackoverflow.com/questions/47286441/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/58636603/'>https://stackoverflow.com/questions/58636603/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/66268742/'>https://stackoverflow.com/questions/66268742/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/64519523/'>https://stackoverflow.com/questions/64519523/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/58898253/'>https://stackoverflow.com/questions/58898253/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/54449159/'>https://stackoverflow.com/questions/54449159/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/64139658/'>https://stackoverflow.com/questions/64139658/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/56910950/'>https://stackoverflow.com/questions/56910950/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/42886049/'>https://stackoverflow.com/questions/42886049/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/43505001/'>https://stackoverflow.com/questions/43505001/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/48257322/'>https://stackoverflow.com/questions/48257322/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/61470732/'>https://stackoverflow.com/questions/61470732/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/48048297/'>https://stackoverflow.com/questions/48048297/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/45252051/'>https://stackoverflow.com/questions/45252051/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/46230501/'>https://stackoverflow.com/questions/46230501/</a><br>
+                    </li>
+                    <li><a
+                            href='https://stackoverflow.com/questions/50895128/'>https://stackoverflow.com/questions/50895128/</a><br>
+                    </li>
+
                 </ul>
             </dv>
         </div>
     </div>
 </body>
+
 </html>
