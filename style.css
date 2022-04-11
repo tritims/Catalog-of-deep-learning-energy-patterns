@@ -3,8 +3,9 @@
 }
 
 .header {
-    height: 200px;
+    /* height: 200px; */
     background-color: #34cfeb;
+    padding-bottom: 20px;
 }
 
 .title {
